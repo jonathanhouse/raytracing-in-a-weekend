@@ -23,7 +23,7 @@ class camera {
             initialize();
             std::cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
             for(int row = 0; row < image_height; row++ ){
-                // std::clog << "\rScanlines remaining: " << (image_height - row) << ' ' << std::flush; // 
+                std::clog << "\rScanlines remaining: " << (image_height - row) << ' ' << std::flush; // 
                 for(int col = 0; col < image_width; col++){
 
                     // if(row == image_height/2 && col == image_width/2){
